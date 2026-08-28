@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Tablet Infantil"
+description = "Dashboard acolhedor e acessível para crianças oncológicas internadas, conectando-as com familiares e amigos e oferecendo jogos e atividades adequadas para idades de 2 a 8 anos."
+version = "1.0.0"
+id = "artifacts/tablet-infantil"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23944
+
+[services.development]
+run = "pnpm --filter @workspace/tablet-infantil run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tablet-infantil", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/tablet-infantil/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23944"
+BASE_PATH = "/"
