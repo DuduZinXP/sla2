@@ -1,0 +1,268 @@
+Quero fazer um TESTE de implementação no projeto atual.
+
+IMPORTANTE:
+- Não recrie o projeto.
+- Não altere o design geral do aplicativo Amora.
+- Não altere as áreas "Início", "Família", "Brincar" ou "Calma".
+- Não altere os jogos ou atividades que já existem.
+- Não remova nenhum conteúdo existente.
+- Preserve completamente o estilo visual atual.
+- O objetivo desta tarefa é implementar somente um sistema funcional para adicionar e exibir 3 histórias.
+- Antes de modificar qualquer arquivo, analise a estrutura atual do projeto e identifique como o conteúdo da área "Criar" está sendo armazenado e exibido.
+- Reutilize a arquitetura existente sempre que possível.
+- Não crie dados fictícios além das informações explicitamente fornecidas abaixo.
+
+OBJETIVO
+
+Na área "Criar" do aplicativo, atualmente existem cartões de atividades/conteúdos.
+
+Quero que essas histórias sejam adicionadas como conteúdos reais do aplicativo, e não apenas como textos escritos diretamente na interface.
+
+Cada história deve poder ser aberta pela criança e lida dentro do aplicativo.
+
+Para este primeiro teste, cadastre SOMENTE estas 3 histórias:
+
+==================================================
+HISTÓRIA 1
+==================================================
+
+Título:
+Luna e os segredos da noite
+
+Faixa etária:
+5 a 6 anos
+
+Texto:
+
+Luna era uma menina de 5 anos, muito esperta e amorosa, que vivia com sua mãe em uma casa no campo. Mesmo com esse belo nome, que fazia lembrar da lua, Luna tinha bastante medo da noite e do escuro.
+
+Sempre que começava a anoitecer, a garotinha ficava angustiada e seu coração começava a bater mais rápido. A noite, com seu manto escuro e misterioso, enchia a menina de dúvidas. Assim, ela sempre acabava indo dormir na cama de sua mãe.
+
+Ela vivia perguntando:
+
+- Mamãe, e se algo muito ruim estiver escondido no escuro?
+
+A mãe sorria, fazia um cafuné em seu cabelo e dizia:
+
+- O escuro não tem o poder de guardar monstros, meu amor. Ao contrário, ele guarda segredos que só quem fecha os olhos e se entrega ao sono pode descobrir.
+
+Mas Luna ainda tinha muitos receios.
+
+Certa noite, sua mãe lhe deu um presente especial: uma lanterna mágica cheia de desenhos de estrelas e luas.
+
+- Quando sentir medo, use essa lanterna, minha filha! Esta noite quero que durma no seu quarto e possa descobrir os segredos que as estrelas têm para te contar!
+
+Luna aceitou o pedido e, mesmo com a lanterna ao seu lado, demorou para dormir. Ela olhava pela janela e via o céu estrelado. De repente, ouviu uma voz suave chamar seu nome.
+
+Ela se surpreendeu e perguntou:
+
+- Quem está aí?
+
+- Somos nós, as estrelas! - responderam as vozes, enquanto os pontos brilhantes no céu pareciam ainda mais intensos.
+
+- Luna, não precisa ter medo do escuro! É nele que moramos. Assim que você fecha os olhos e permite que os sonhos te recebam, nós podemos te mostrar lugares mágicos e fantásticos!
+
+Curiosa, a menina se entregou ao sono e deixou seu inconsciente a guiar. Ela sonhou que caminhava entre as estrelas e saltava de uma para outra, enquanto ouvia histórias sobre o universo. Luna percebeu que o escuro não era assustador, mas um lugar cheio de possibilidades para sonhar e criar.
+
+No dia seguinte, Luna acordou feliz. Tinha dormido a noite inteira em sua cama pela primeira vez. Quando a mãe entrou no quarto, Luna foi logo abraçá-la e contar sua experiência.
+
+- Mamãe, o escuro não é tão ruim assim, na verdade, ele é mágico! As estrelas me contaram muitos segredos!
+
+Daquele dia em diante, a linda garotinha não teve mais medo do escuro. Ela agora gostava quando chegava a noite, pois poderia passear com suas amigas estrelas e descobrir os segredos do universo!
+
+Interpretação:
+
+A história da garotinha que ficava aflita com a chegada da noite nos ensina que o medo muitas vezes vem do desconhecido, mas que, com coragem e interesse, podemos transformá-lo em algo inspirador. A lanterna que Luna ganha de presente da mãe simboliza acolhimento e segurança. Ela mostra que, com pequenas ajudas, é possível enfrentar nossas inseguranças.
+
+As estrelas são o símbolo de um mundo fantástico e das possibilidades escondidas naquilo que nos assusta. A principal mensagem é de coragem e de que a noite não precisa ser assustadora e pode ser um lugar de descanso, imaginação, sonhos e aprendizados.
+
+Imagem:
+Utilizar a imagem fornecida para Luna, caso ela já esteja disponível nos arquivos do projeto.
+Não buscar ou gerar outra imagem automaticamente.
+Se a imagem ainda não estiver no projeto, criar a estrutura para que ela possa ser adicionada posteriormente.
+
+==================================================
+HISTÓRIA 2
+==================================================
+
+Título:
+O ratinho e o leão
+
+Faixa etária:
+AINDA NÃO DEFINIDA.
+
+IMPORTANTE:
+Não inventar uma faixa etária para esta história.
+O sistema deve permitir que a história seja cadastrada mesmo com a faixa etária ainda não definida.
+
+Texto:
+
+Era uma vez um leão, que dormia profundamente na selva. De repente, ele começou a sentir cócegas e percebeu que um grupo de ratinhos corria em cima dele.
+
+Quando viram que o animal acordou, os ratinhos correram assustados para o meio da mata. Mas um deles não conseguiu escapar e acabou preso entre as patas do enorme rei da floresta.
+
+Com medo, o ratinho implorou:
+
+- Ô seu leão, por favor, não me coma! Eu te peço!
+
+O leão pensou e perguntou:
+
+- Mas por que eu não deveria comê-lo?
+
+O rato respondeu:
+
+- Quem sabe se um dia você precisar de mim, eu posso ajudá-lo!
+
+Então o leão soltou o ratinho, que seguiu feliz para junto de seus amigos. O tempo passou e um dia o leão foi capturado por um grupo de homens maus, que o prenderam em uma rede.
+
+O mesmo ratinho, que estava por perto, ouviu os gritos de socorro do leão e foi até lá. Lembrando de que o leão havia poupado sua vida, o pequeno roedor mastigou e mastigou a corda, conseguindo cortá-la e libertar o leão.
+
+Os dois ficaram amigos a partir de então.
+
+Interpretação:
+
+Essa pequena fábula foi criada por Esopo, escritor da Grécia Antiga, no século VI a. C. A narrativa traz como moral a ideia de que quem faz o bem recebe o bem. Trata de assuntos como a solidariedade, a confiança e a amizade.
+
+Além disso, nos mostra que independente do tamanho, todos os seres possuem suas habilidades e a ajuda pode vir dos mais singelos amigos.
+
+Imagem:
+Não existe uma imagem definida para esta história neste momento.
+Não inventar ou buscar imagem.
+Usar um placeholder visual elegante que combine com o aplicativo até que uma imagem seja adicionada posteriormente.
+
+==================================================
+HISTÓRIA 3
+==================================================
+
+Título:
+O Esquilo Pipoca e a Lição de Paciência
+
+Faixa etária:
+AINDA NÃO DEFINIDA.
+
+IMPORTANTE:
+Não inventar uma faixa etária.
+Permitir que o conteúdo seja cadastrado sem faixa etária definida.
+
+Texto:
+
+Era uma vez um esquilo chamado Pipoca. Ele era ágil e rápido, sempre correndo de um lado para o outro, enchendo suas patas com nozes. No entanto, em sua pressa, muitas vezes deixava cair boa parte do alimento pelo caminho, sem perceber.
+
+Sua amiga, a tartaruga Teca, era bem diferente. Ela andava devagar sempre cuidadosa, carregando as nozes em seu casco, uma de cada vez.
+
+- Pipoca, talvez ir mais devagar te ajude a conquistar mais, disse Teca um dia, vendo o esquilo perder várias nozes enquanto corria.
+
+Mas Pipoca apenas riu.
+
+- Eu sou rápido demais para me preocupar com isso, Teca!
+
+Os ventos mudaram e, finalmente, o inverno chegou. Quando o esquilinho foi verificar seu estoque, percebeu que sua pilha de nozes era bem menor do que ele pensava. Muitas tinham sido perdidas pelo caminho.
+
+Enquanto isso, Teca tinha um estoque organizado e com a quantidade perfeita para se alimentar durante o inverno. Envergonhado, Pipoca foi até sua amiga e pediu ajuda.
+
+Teca, com sua calma de sempre, sorriu e disse:
+
+- Claro que vou te ajudar. Mas lembre-se: às vezes, é melhor trabalhar com calma e atenção. Assim, o esforço não é desperdiçado.
+
+Na primavera seguinte, Pipoca decidiu tentar o método de Teca. Ele trabalhou devagar, com cuidado, e notou como sua pilha de nozes crescia. Aprendeu, então, que a paciência pode ser uma grande aliada e nunca mais se apressou sem necessidade.
+
+Interpretação:
+
+A história nos ensina que não adianta agir rapidamente se não prestamos atenção no que estamos fazendo. Muitas vezes, ir devagar e ser cuidadoso pode garantir que nossos esforços sejam recompensados. Além disso, a história reforça o valor da humildade, pois Pipoca reconheceu seus erros e aprendeu com Teca, mostrando que é importante ouvir conselhos e aceitar ajuda.
+
+Imagem:
+Utilizar as imagens fornecidas do esquilo Pipoca e da tartaruga Teca, caso já estejam disponíveis nos arquivos do projeto.
+Não duplicar a mesma imagem.
+Se as imagens ainda não estiverem disponíveis no projeto, criar a estrutura para adicioná-las posteriormente.
+
+==================================================
+COMPORTAMENTO DA LEITURA
+==================================================
+
+Ao clicar em uma história, abrir uma tela própria de leitura.
+
+A tela deve:
+
+1. Mostrar o título.
+2. Mostrar a imagem da história.
+3. Mostrar o texto de forma confortável para uma criança ler.
+4. Não colocar toda a história em uma única linha ou bloco visualmente difícil.
+5. Dividir o conteúdo em páginas ou blocos de leitura confortáveis.
+6. Possibilitar avançar e voltar.
+7. Ter um botão claro para voltar à área de histórias.
+8. Mostrar a interpretação somente depois do texto principal da história.
+9. Manter o mesmo estilo visual acolhedor do aplicativo Amora.
+10. Ser responsiva para tablet.
+
+IMPORTANTE:
+Não criar narração por voz ainda.
+Não criar perguntas ou minijogos ainda.
+Não criar sistema de pontuação ainda.
+Não criar novas histórias.
+Não alterar os jogos existentes.
+Não alterar as outras áreas do aplicativo.
+
+==================================================
+ÁREA DE CADASTRO / DADOS
+==================================================
+
+Quero que as histórias sejam armazenadas de forma estruturada, e não simplesmente escritas diretamente no componente visual.
+
+Cada história deve possuir pelo menos:
+
+- id
+- título
+- faixa etária
+- texto
+- interpretação
+- imagem
+- status
+
+Se o projeto já possuir banco de dados ou estrutura de armazenamento, reutilizar a estrutura existente em vez de criar uma segunda solução desnecessária.
+
+Se ainda não houver banco de dados, primeiro explique no relatório final qual solução está sendo utilizada e por quê.
+
+==================================================
+ÁREA "CRIAR"
+==================================================
+
+As 3 histórias devem aparecer na área "Criar" sem remover os conteúdos que já existem.
+
+Criar cartões seguindo o estilo visual atual.
+
+Cada cartão deve mostrar:
+
+- imagem ou placeholder
+- título
+- faixa etária quando definida
+- indicação de que é uma história
+- botão para abrir
+
+Não transformar os conteúdos existentes em histórias.
+
+==================================================
+TESTE E VALIDAÇÃO
+==================================================
+
+Depois de implementar:
+
+1. Verifique se o projeto continua iniciando normalmente.
+2. Verifique se a área "Criar" continua funcionando.
+3. Verifique se as 3 histórias aparecem.
+4. Abra cada uma das 3 histórias.
+5. Verifique se o texto completo está presente.
+6. Verifique se a interpretação está presente.
+7. Verifique se voltar para "Criar" funciona.
+8. Verifique se o layout funciona em uma tela de tablet.
+9. Verifique se nenhum dos conteúdos existentes foi removido ou quebrado.
+
+NÃO faça outras alterações fora do escopo desta tarefa.
+
+Ao terminar, apresente um resumo contendo:
+- arquivos criados;
+- arquivos modificados;
+- estrutura de dados utilizada;
+- como as histórias estão sendo armazenadas;
+- como cada história pode ser editada futuramente;
+- problemas encontrados durante a implementação;
+- testes realizados.

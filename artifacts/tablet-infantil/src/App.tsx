@@ -3,6 +3,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { StoryReaderPage } from '@/components/story-reader';
+import { stories, storyAgeLabels, type Story } from '@/data/stories';
 import NotFound from '@/pages/not-found';
 import {
   BookOpen,
@@ -140,6 +142,9 @@ function App() {
                   </Route>
                   <Route path="/brincar">
                     <PlayPage gameOpen={gameOpen} setGameOpen={setGameOpen} gameScore={gameScore} setGameScore={setGameScore} />
+                  </Route>
+                  <Route path="/criar/historia/:id">
+                    <StoryReaderRoute />
                   </Route>
                   <Route path="/criar">
                     <CreatePage age={age} completed={completed} markDone={markDone} />
@@ -432,6 +437,13 @@ function CreatePage({ age, completed, markDone }: { age: Age; completed: string[
       <div className="subpage-heading create-heading"><div><span className="eyebrow"><span className="eyebrow-line" /> SEU ATELIÊ</span><h1>Vamos fazer<br /><em>uma coisa linda.</em></h1><p>Você não precisa saber como. É só começar.</p></div><div className="pencil-doodle"><Palette size={57} /><span /><span /><span /></div></div>
       <div className="create-tabs"><span className="create-tab active">Para você</span><span className="create-tab">Meus feitos <small>{completed.length}</small></span></div>
       <div className="create-grid">{activities.map((activity, index) => <CreateCard key={`${activity.id}-${age}`} activity={activity} done={completed.includes(activity.id)} index={index} onDone={() => markDone(activity.id, activity.title)} />)}<button className="create-empty-card" onClick={() => markDone('surprise', 'Ideia surpresa')} data-testid="button-surprise-activity"><span><Plus size={25} /></span><strong>Me surpreenda</strong><small>uma ideia novinha</small></button></div>
+      <div className="story-section-heading">
+        <div><span className="eyebrow"><span className="eyebrow-line" /> HISTÓRIAS DA AMORA</span><h2>Um cantinho para ler</h2></div>
+        <p>Escolha uma história e vá passando as páginas no seu ritmo.</p>
+      </div>
+      <div className="story-grid">
+        {stories.map((story, index) => <StoryCard key={story.id} story={story} index={index} />)}
+      </div>
       <div className="made-note"><Star size={20} fill="currentColor" /><span>Você já fez <strong>{completed.length} atividade{completed.length === 1 ? '' : 's'}</strong>. Cada criação tem seu brilho.</span></div>
     </section>
   );
@@ -439,6 +451,32 @@ function CreatePage({ age, completed, markDone }: { age: Age; completed: string[
 
 function CreateCard({ activity, done, index, onDone }: { activity: Activity; done: boolean; index: number; onDone: () => void }) {
   return <button className={`create-card ${activity.color} create-card-${index}`} onClick={onDone} data-testid={`button-create-${activity.id}`}><div className="create-art">{activity.icon}<span className="art-stroke stroke-one" /><span className="art-stroke stroke-two" /></div><div className="create-card-copy"><span className="eyebrow">ATIVIDADE {index + 1}</span><h2>{activity.title}</h2><p>{activity.detail}</p><span className={`complete-chip ${done ? 'done' : ''}`}>{done ? <><Check size={14} /> guardado</> : <>começar <ChevronRight size={15} /></>}</span></div></button>;
+}
+
+function StoryCard({ story, index }: { story: Story; index: number }) {
+  const ageLabel = story.ageRange ? storyAgeLabels[story.ageRange] : 'Faixa etária a definir';
+  return (
+    <article className={`story-card story-card-${index}`} data-testid={`card-story-${story.id}`}>
+      <div className="story-card-art">
+        {story.image ? <img src={story.image} alt={story.imageAlt} /> : <div className="story-card-placeholder"><BookOpen size={31} /><span>Imagem em breve</span></div>}
+      </div>
+      <div className="story-card-copy">
+        <span className="story-card-kicker"><BookOpen size={14} /> HISTÓRIA</span>
+        <h2>{story.title}</h2>
+        <span className="story-card-age">{ageLabel}</span>
+        <Link href={`/criar/historia/${story.id}`} className="story-open-link" data-testid={`link-open-story-${story.id}`}>
+          abrir história <ChevronRight size={16} />
+        </Link>
+      </div>
+    </article>
+  );
+}
+
+function StoryReaderRoute() {
+  const [location] = useLocation();
+  const storyId = decodeURIComponent(location.split('/').pop() ?? '');
+  const story = stories.find((item) => item.id === storyId);
+  return story ? <StoryReaderPage story={story} /> : <NotFound />;
 }
 
 function CalmPage({ soundOn, setSoundOn }: { soundOn: boolean; setSoundOn: (value: boolean) => void }) {
